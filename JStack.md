@@ -43,7 +43,7 @@ Conforme as funções são executadas, elas vão saindo da Call Stack (Funcionan
 
 O Node.js é uma plataforma orientada a eventos que utiliza o conceito de thread única para gerenciar a pilha de eventos ou pilha de chamada (Call Stack), que por sinal adota o comportamento do tipo LIFO (última entrada, primeira saída). As operações de background no Node são gerenciadas por works que rodam em segundo plano, estes sim podem conter operações multi-thread.
 
-Os works são processos em background de I/O assíncrono não bloqueastes gerenciados pela libuv, uma biblioteca open source multiplataforma escrita em linguagem C, a qual utiliza um thread-pool para gerenciar operações paralelas.
+Os works são processos em background de I/O assíncrono não bloqueantes gerenciados pela libuv, uma biblioteca open source multiplataforma escrita em linguagem C, a qual utiliza um thread-pool para gerenciar operações paralelas.
 
 Este comportamento de thread única para manipulação da Call Stack é o que garante tanta performance a essa plataforma.
 
@@ -91,7 +91,7 @@ Módulos são conjunto de códigos que podem, ou não, ser reutilizados.
 
 Dentro do Node existem 3 tipos de módulos:
 
-- **Todos os arquivos JavaScript são módulos**;
+- **Arquivos JavaScript, todos são módulos**;
 - Nativos;
 - npm (Node Package Manager).
 
