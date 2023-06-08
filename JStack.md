@@ -97,7 +97,23 @@ Dentro do Node existem 3 tipos de módulos:
 
 #### O que são middlewares?
 
+Fluxo de uma request normal
 
+Request → Controller → Response
+
+Fluxo de uma request com Middleware
+
+Request → Middleware → Controller → Response
+
+Request → Middleware → Middleware → Middleware → Controller → Response
+
+Os Middlewares servem para manipular os objetos de resquest e responses, tirando, adicionando campos, validando-os e até controlando o "life cicle" das requests, ou seja, os Middlewares tem o poder de barrar o fluxo da request impossibilitando a chegada até o controller. Com os Middlewares também é possível direcionar nossas requests para rotas (ou rota) específicas.
+
+Os Middlewares, no Express, são executados conforme a sequência de declaração:
+
+![image-20230608174833089](C:\Users\gabriel.santos\AppData\Roaming\Typora\typora-user-images\image-20230608174833089.png)
+
+Outra característica do Middleware no Express é que as nossas rotas também são consideradas Middlewares, ou seja, primeiro o Express rodará o Middleware 1, depois Middleware 2, etc, até chegar as nossas rotas.
 
 ## Material Complementar
 
