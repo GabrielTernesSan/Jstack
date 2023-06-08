@@ -95,6 +95,10 @@ Dentro do Node existem 3 tipos de módulos:
 - Nativos;
 - npm (Node Package Manager).
 
+#### O que são middlewares?
+
+
+
 ## Material Complementar
 
 https://medium.com/reactbrasil/como-o-javascript-funciona-uma-vis%C3%A3o-geral-da-engine-runtime-e-da-call-stack-471dd5e1aa30
