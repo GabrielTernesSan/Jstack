@@ -115,6 +115,14 @@ Os Middlewares, no Express, são executados conforme a sequência de declaraçã
 
 Outra característica do Middleware no Express é que as nossas rotas também são consideradas Middlewares, ou seja, primeiro o Express rodará o Middleware 1, depois Middleware 2, etc, até chegar as nossas rotas.
 
+#### O que é Docker
+
+O Docker é um gerenciador de Containers e encapsula sua aplicação dentro dele. Não importa o ambiente em que você esteja rodando, o Docker garante que a aplicação rodará sempre da mesma maneira pois o container, além de conter a sua aplicação, também contém tudo o que você precisa para que o seu sistema funcione.
+
+![img](https://miro.medium.com/v2/resize:fit:1050/1*Y3LlWq2c-gVPq8Mym0hzgg.png)
+
+O Docker aproveita a infraestrutura do kernel do seu sistema operacional para não precisar instalar outro SO completo. Ao invés disso ele utiliza de um engine (chamado de Docker Engine, como mostra a imagem) para abstrair as chamadas de SO das suas aplicações e utilizar as libraries e binários já existentes. Para criar e executar os seus containers, o Docker cria processos (como os programas normais) mantendo isolados em cada um deles as dependências da sua aplicação, garantindo que estejam instaladas nela apenas as bibliotecas (*libs*) necessárias para fazer a sua aplicação funcionar.
+
 ## Material Complementar
 
 https://medium.com/reactbrasil/como-o-javascript-funciona-uma-vis%C3%A3o-geral-da-engine-runtime-e-da-call-stack-471dd5e1aa30
@@ -122,3 +130,5 @@ https://medium.com/reactbrasil/como-o-javascript-funciona-uma-vis%C3%A3o-geral-d
 https://fabiojanio.medium.com/introdu%C3%A7%C3%A3o-ao-node-js-single-thread-event-loop-e-mercado-46edd82c1faf
 
 https://www.redhat.com/pt-br/topics/api/what-are-application-programming-interfaces
+
+https://medium.com/trainingcenter/docker-o-que-%C3%A9-docker-e-como-come%C3%A7ar-58e04bdcb043
