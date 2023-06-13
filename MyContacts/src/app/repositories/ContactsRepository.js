@@ -32,13 +32,6 @@ class ContactsRepository {
     return row;
   }
 
-  delete(id) {
-    return new Promise((resolve) => {
-      contacts = contacts.filter((contact) => contact.id !== id);
-      resolve();
-    });
-  }
-
   async findByEmail(email) {
     const [row] = await db.query('SELECT * FROM contacts WHERE email = $1', [email]);
 
@@ -74,6 +67,13 @@ class ContactsRepository {
       ));
 
       resolve(updatedContact);
+    });
+  }
+
+  delete(id) {
+    return new Promise((resolve) => {
+      contacts = contacts.filter((contact) => contact.id !== id);
+      resolve();
     });
   }
 }
